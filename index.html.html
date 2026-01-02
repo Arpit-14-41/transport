@@ -1,0 +1,115 @@
+<html>
+    <body>
+        <style>
+            #head
+            {
+                background-color:darkblue;
+                width: 100%;
+                height: 10%;
+                position:relative;
+                margin-top: -1%;
+            }
+            a
+            {
+                color:whitesmoke;
+                margin-left:100px;
+                font-size:xx-large;   
+            }   
+            .s
+            { 
+                margin-left: 13%;
+                margin-top: 1%;
+                position: absolute;    
+            }
+         
+            #im
+            {
+                background-image: url("ChatGPT\ Image\ Jul\ 2\,\ 2025\,\ 02_53_42\ AM.png");
+                background-repeat:no-repeat;
+                margin-top:-12%;
+                width: 100%;
+                height: 120%;
+                flood-opacity: 0.2;
+            }
+            a:hover
+            {
+                background-color:aqua;
+            }
+            a 
+            {
+                text-decoration: none;
+                color:red;
+                font-size: 20px;
+                padding: 15px;
+                display:inline-block;
+            }
+            ul 
+            {
+                display: inline;
+                margin: 0;
+                padding: 0;
+            }
+            ul li {display: inline-block;}
+            ul li:hover ul {display: block;}
+            ul li ul 
+            {
+                position: absolute;
+                width: 2px;
+                display: none;
+
+            }
+            ul li ul li 
+            {
+                color: red;
+                display: block; 
+                background-color:black;
+            }
+            #aa
+            {
+                margin-top:-47.9%;
+                position: absolute;
+                margin-left: 2%;
+            }
+        </style>
+        
+        <div id="head">
+            <div class="s">
+                <a href="calcu.html" id="hm">Home</a>  
+                <a href="about.html">About</a>
+                <a href="">TRUCK</a>
+                <a href="http://localhost/sub/busCopy.php">BUS</a>
+                <a href="
+            <script>
+                fetch('AIzaSyC_EPhjUtMXubp7BuPYpd5DtUJXP9Rcg_I').then(res => {
+                    return res.json();
+                }).then(data => {
+                    data.forEach(user => {
+                        const marker = L.marker([user.lat, user.lng]).addTo(map);
+                        marker.bindPopup(`<b>${user.name}</b><br>${user.address}`).openPopup();
+                        document.querySelector('#im').innerHTML += `<p>${user.name} - ${user.address}</p>`;
+                        
+                    });
+                    console.log(data);
+                }).
+                catch (error => {
+                    console.log('Error:', error);
+                }); 
+
+            </script>">Track</a>
+                <a href="http://localhost/sub/customer.html">Feedback</a>
+            </div>
+        </div>
+        <div id="im"></div>
+        <div>
+            <ul>
+                <li id="aa">
+                    <a href="#">HELP</a>
+                    <ul>
+                        <li><a href="java3.html">CUSTOMER</a></li>
+                        <li><a href="#">BROKER</a></li>
+                    </ul>
+                </li>
+            </ul>    
+        </div>
+    </body>
+</html>
